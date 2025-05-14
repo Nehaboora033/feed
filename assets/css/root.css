@@ -12,6 +12,27 @@
     --fw-lg:600;
     --fw-md:500;
     --fw-sm:400;
+
+
+
+    --text-color-grey:#666666;
+    --bg-color-lavender:#EAEDFF;
+    --bg-color:#2C49FE;
+    --text-number-color-grey:#5E5F66;
+}
+
+
+.text_color_grey{
+    color: var(--text-color-grey);
+}
+.bg_color_lavender{
+    background-color: var(--bg-color-lavender);
+}
+.bg_color{
+    background:var(--bg-color);
+}
+.text_number_color_grey{
+    color:var(--text-number-color-grey)
 }
 
 .fs_4xl{

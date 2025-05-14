@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,42 +10,85 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
+
 <body>
-<section>
-    <nav>
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between ">
-                <div class="d-flex align-items-center logo w-sm-100 w-75">
-                    <a href=""><img src="./assets/images/svg/logo.svg" alt="logo" class="w-100"></a>
-                    <a href=""><img src="./assets/images/svg/EventsFree.svg" alt="logo-text" class="d-sm-block w-100 "></a>
+    <section class="header">
+        <nav>
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between ">
+                    <div class="d-flex align-items-center logo w-sm-100 w-75">
+                        <a href=""><img src="./assets/images/svg/logo.svg" alt="logo" class="w-100"></a>
+                        <a href=""><img src="./assets/images/svg/EventsFree.svg" alt="logo-text"
+                                class="d-sm-block w-100 "></a>
+                    </div>
+                    <div class="d-flex justify-content-between d-flex gap-30 flex_md-row-reverse align-items-center">
+                        <button class="menu-icon d-lg-none" onclick="menuIcon()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="hstack gap-3 activeNavBar menu-list ">
+                            <div class="p-2 text-dark fw_sm fs_lg nav-attribute font-family line-height-100 ">HOME</div>
+                            <div class="p-2 text-dark fw_sm fs_lg nav-attribute font-family line-height-100">EVENTS
+                            </div>
+                            <div class="p-2 text-dark fw_sm fs_lg nav-attribute font-family line-height-100">FEED</div>
+                            <div
+                                class="p-2 text-dark fw_sm fs_lg text-nowrap nav-attribute font-family line-height-100">
+                                USER NAME</div>
+                            <button
+                                class="text-light nav-button text-nowrap m-0 fw_lg fs_lg bg_color font-family line-height-150">Log
+                                Out</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between d-flex gap-30 flex_md-row-reverse align-items-center">
-                    <button class="menu-icon d-lg-none" onclick="menuIcon()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div class="hstack gap-3 activeNavBar menu-list ">
-                        <div class="p-2 text-dark fw_sm fs_md nav-attribute ">HOME</div>
-                        <div class="p-2 text-dark fw_sm fs_md nav-attribute">EVENTS</div>
-                        <div class="p-2 text-dark fw_sm fs_md nav-attribute">FEED</div>
-                        <div class="p-2 text-dark fw_sm fs_md text-nowrap nav-attribute">USER NAME</div>
-                        <button class="text-light nav-button text-nowrap m-0 fw_lg fs_md">Log Out</button>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./assets/images/png/section1-img.png" alt="profile picture" class="w-100">
+                </div>
+                <div class="col-8">
+                    <p class="text_color_grey fw_sm fs_lg font-family line-height-150">Home > Username</p>
+                    <h2 class="fw_lg fs_4xl font-family line-height-150  text-dark">Jhone Doe</h2>
+                    <p class="fw_sm fs_lg font-family line-height-150 text_color_grey">Dictumst vulputate eget quisque
+                        iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam
+                        morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut
+                        vitae dolor fringilla urna
+                        eget aliquet.</p>
+                    <p class="fw_lg fs_lg  text_color_grey font-family line-height-150 ">Following Events :</p>
+                    <div class="d-flex justify-content-between">
+                        <div class="card1 d-flex align-items-center gap-3">
+                            <img src="./assets/images/svg/card1-img1.svg" alt="image" class="w-100 ">
+                            <div>
+                                <h2 class="fw_xl fs_lg font-family line-height-100 text-dark">Augue etiam</h2>
+                                <p class="fw_sm fs_sm font-family line-height-100 text_color_grey">Quis et id urna
+                                    sagittis. Enim lacus, felis, libero sed nisl vitae blandit sociis.</p>
+                            </div>
+                        </div>
+                        <div class="card1 d-flex align-items-center gap-3">
+                            <img src="./assets/images/svg/card1-img2.svg" alt="image" class="w-100 ">
+                            <div>
+                                <h2 class="fw_xl fs_lg font-family line-height-100 text-dark">Augue etiam</h2>
+                                <p class="fw_sm fs_sm font-family line-height-100 text_color_grey">Quis et id urna
+                                    sagittis. Enim lacus, felis, libero sed nisl vitae blandit sociis.</p>
+                            </div>
+                        </div>
+                        <a href="" class="card2 d-flex align-items-center flex-column bg_color_lavender">
+                            <p class="fw_lg fs_3xl font-family line-height-150 text_number_color_grey">+15</p>
+                            <p class="fw_sm fs_lg font-family line-height-150 text_number_color_grey">more</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
-<div class="container">
-    
-</div>
 
 
 
 
 
 
-</section>
+    </section>
 
 
 
@@ -63,4 +107,5 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
