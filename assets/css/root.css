@@ -1,10 +1,10 @@
 :root {
-    --fs-4xl: 46px;
-    --fs-3xl: 34px;
-    --fs-2xl: 22px;
-    --fs-xl: 18px;
+    --fs-4xl: 48px;
+    --fs-3xl: 36px;
+    --fs-2xl: 24px;
+    --fs-xl: 20px;
     --fs-lg: 14px;
-    --fs-md: 12px;
+    --fs-md: 13px;
     --fs-sm: 10px;
 
 
@@ -82,7 +82,7 @@
     font-weight: var(--fw-sm);
 }
 
-@media(min-width:1200px) {
+@media(min-width:992px) {
     :root {
         --fs-4xl: 48px;
         --fs-3xl: 36px;
