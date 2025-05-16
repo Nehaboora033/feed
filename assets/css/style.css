@@ -56,13 +56,14 @@ nav {
 }
 
 .card3 {
-    padding: 34px;
+    padding: 28px;
     box-shadow: 0px 8px 35px 0px #0000001A;
     border-radius: 30px;
 }
 
 .parent {
     display: grid;
+    margin: auto;
 }
 
 .div1 {
@@ -70,15 +71,15 @@ nav {
 }
 
 .div2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.div3 {
     grid-area: 2 / 1 / 3 / 2;
 }
 
+.div3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
 .div4 {
-    grid-area: 2 / 2 / 3 /3;
+    grid-area: 4 / 1 / 5 /2;
 }
 
 .image {
@@ -97,10 +98,10 @@ nav {
 .box1 {
     max-width: 100px;
     height: 100px;
-    padding: 11px 20px;
+    padding: 3px 15px;
     border-radius: 20px;
-    top: 30%;
-    right: 6%;
+    top: 40%;
+    right: 3%;
 }
 
 .post-comment {
@@ -112,8 +113,8 @@ nav {
 
 ::placeholder {
     font-family: "Poppins", sans-serif;
-    font-weight: var(--fw-400);
-    font-size: var(--fs-20px);
+    font-weight: var(--fw-sm);
+    font-size: var(--fs-lg);
     line-height: 150%;
 }
 
@@ -124,8 +125,8 @@ nav {
     padding-bottom: 7px;
     padding-right: 7px;
     padding-left: 85px;
-    margin-top: 47px;
-    height: 70px;
+    margin-top: 40px;
+    height: 57px;
     width: 100%;
 }
 
@@ -159,11 +160,6 @@ nav {
     margin-top: 118px;
     width: 100%;
 }
-
-/* .footer-logo:hover {
-    cursor: pointer;
-    scale: 1.04;
-} */
 
 .parent1 {
     display: grid;
@@ -222,9 +218,7 @@ ul {
     margin-top: 79px !important;
 }
 
-.mt-34 {
-    margin-top: 34px;
-}
+
 
 .mt-45 {
     margin-top: 45px;
@@ -246,6 +240,7 @@ ul {
     margin-bottom: 12px;
 }
 
+
 /* max-width-property */
 .max-w-553 {
     max-width: 553px;
@@ -259,19 +254,88 @@ ul {
     max-width: 441px;
 }
 
+.max-w-300 {
+    max-width: 300px;
+}
 
+.profile {
+    position: absolute !important;
+    left: 2%;
+    top: 48%;
+    width: 45px;
+}
 
+.post-comment {
+    position: absolute !important;
+    right: 0%;
+    top: 100%;
+}
 
+.w-45{
+    width: 45px;
+}
 
+@media(min-width:576px) {
+    .parent {
+        display: grid;
+    }
 
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
 
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 
+    .div4 {
+        grid-area: 2 / 2 / 3 /3;
+    }
 
+    .box1 {
+        top: 35%;
+        right: 4%;
+        padding: 11px 20px;
+    }
 
+    .profile {
+        position: absolute !important;
+        left: 1%;
+        top: 43%;
+        width: 55px;
+    }
 
+    .post-comment {
+        position: absolute !important;
+        right: 0.65%;
+        top: 43%;
+    }
 
+    .mt-sm-34 {
+        margin-top: 34px;
+    }
 
+    .card3 {
+        padding: 34px;
+    }
+
+    ::placeholder {
+        font-family: "Poppins", sans-serif;
+        font-weight: var(--fw-sm);
+        font-size: var(--fs-lg);
+        line-height: 150%;
+    }
+    .input{
+        height: 70px;
+    }
+    .w-sm-55{
+        width: 55px;
+    }
+}
 
 @media(min-width:768px) {
 
@@ -312,51 +376,14 @@ ul {
         cursor: pointer;
     }
 
-    .profile {
-        position: absolute !important;
-        left: 1%;
-        top: 47%;
-    }
-
-    .post-comment {
-        position: absolute !important;
-        right: 0.65%;
-        top: 47%;
-    }
-
     .box1 {
         top: 50%;
         right: 4%;
-        max-width: 100px;
-        height: 100px;
-
-
-    }
-
-    .parent {
-        display: grid;
-    }
-
-    .div1 {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .div2 {
-        grid-area: 1 / 2 / 2 / 3;
-    }
-
-    .div3 {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .div4 {
-        grid-area: 2 / 2 / 3 /3;
     }
 }
 
 @media(min-width:1200px) {
     .box1 {
-        padding: 11px 20px;
         top: 40%;
         right: 4%;
     }
@@ -415,7 +442,7 @@ ul {
 
     .nav-button {
         padding: 0;
-        background-color: unset;
+        background-color: unset !important;
     }
 
     .nav-button:hover {
