@@ -44,7 +44,7 @@ nav {
 .card1 {
     border-radius: 20px;
     padding: 13px;
-    box-shadow: 0px 8px 35px 0px #0000001A;
+    border: 1px solid #00000033;
     margin-right: 20px;
 
 }
@@ -57,7 +57,7 @@ nav {
 
 .card3 {
     padding: 28px;
-    box-shadow: 0px 8px 35px 0px #0000001A;
+    border: 1px solid #00000033;
     border-radius: 30px;
 }
 
@@ -291,16 +291,16 @@ ul {
 }
 
 .post-title {
-    width: 932px;
-    height: 60px;
+    width: 100%;
+
     border-radius: 35px;
     border: 1px solid #9CA1BE;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px;
     font-family: "Poppins", sans-serif;
     line-height: 150%;
     font-weight: 400;
     font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .select-input {
@@ -308,7 +308,7 @@ ul {
     border: 1px solid #9CA1BE;
     padding-left: 24px;
     padding-right: 18px;
-    margin-left: 14px;
+    /* margin-left: 14px; */
 
 }
 
@@ -329,6 +329,13 @@ ul {
 
 }
 
+.modal {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
 
 
@@ -459,6 +466,8 @@ ul {
     .card1:hover {
         cursor: pointer;
         scale: 1.05;
+        box-shadow: 0px 8px 35px 0px #0000001A;
+        border: none;
     }
 
     .nav-button:hover {
@@ -490,6 +499,26 @@ ul {
     .box1 {
         top: 50%;
         right: 4%;
+    }
+
+    .card3:hover {
+        box-shadow: 0px 8px 35px 0px #0000001A;
+        border: none;
+    }
+
+    .box3:hover {
+        box-shadow: 0px 8px 35px 0px #0000001A;
+        border: none;
+    }
+
+    .post-title {
+        width: 75%;
+        margin-bottom: 0;
+        padding: 15px 30px;
+    }
+
+    .select-input {
+        margin-left: 14px;
     }
 }
 
