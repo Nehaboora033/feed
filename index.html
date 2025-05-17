@@ -163,47 +163,63 @@
                         <input type="text" placeholder="Add a new comment" class="input">
                         <img src="./assets/images/svg/profile2.svg" alt="profile2" class="profile cursor">
                         <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            class=" btn-primary   post-comment fw_lg fs_xl font-family line-height-150 text-light bg_color_blue transition m-sm-0 mt-2">Post
+                            class="post-comment fw_lg fs_xl font-family line-height-150 text-light bg_color_blue transition m-sm-0 mt-2">Post
                             Comment</button>
-
 
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <h2 class="fw_lg fs_3xl font-family line-height-150 text-dark">Create Post</h2>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        <form>
+                                            <div class="d-flex">
+                                                <input type="text" placeholder="Post title will be here..."
+                                                    class="post-title">
+                                                <div class="select-input d-flex justify-content-between align-items-center">
+                                                    <button class="dropdown-button font-family line-height-100 fw_sm fs_xl  text_color_grey   dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        select event
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Fusion Fest</a></li>
+                                                            <li><a class="dropdown-item" href="#">Glow meta</a></li>
+                                                            <li><a class="dropdown-item" href="#">Nova Night</a></li>
+                                                        </ul>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <textarea type="text" class="mt-2 textarea"
+                                                placeholder="Post description will be here..."></textarea>
+                                        </form>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    <div class="modal-footer d-flex justify-content-between">
+                                        <button type="button"
+                                            class="font-family line-height-150 fw_md fs_xl select-photos-button"
+                                            data-bs-dismiss="modal">Select Photos</button>
+                                        <button type="button"
+                                            class="create-post-button font-family line-height-150 fw_md fs_xl bg_color_blue text-light">Create
+                                            Post</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        <!-- <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div> -->
 
 
                     </div>
@@ -699,7 +715,7 @@
 
 
     <script>
-        document.querySelector("textare").value = "";
+        // document.querySelector("textarea").value = "";
         function menuIcon() {
             document.querySelector('.menu-list').classList.toggle('show')
             document.querySelector('nav').classList.toggle('activeNavBar');
